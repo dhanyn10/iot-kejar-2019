@@ -8,7 +8,7 @@ float cek_sensor(int out, int in)
   delayMicroseconds(2);
   digitalWrite(out, LOW);
   duration = pulseIn(in, HIGH);
-  distance = (duration/29)/2;
+  distance = (duration/2)/29.1;
   Serial.print("jarak : ");
   Serial.print(distance);
   Serial.println(" cm");
